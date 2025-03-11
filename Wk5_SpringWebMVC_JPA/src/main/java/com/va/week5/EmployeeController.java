@@ -33,6 +33,10 @@ public @ResponseBody String add
 {
 Employee employee=new Employee(empId,empName,jobTitle,salary,deptNo);
 empRepo.save(employee);
+// this will create an insert query to save the entity with specific attributes 
+// that it got from the client!. 
+// insert into employee table values(......);
+
 return "An employee info added";
 }
 	

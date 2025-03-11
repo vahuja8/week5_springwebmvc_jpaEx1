@@ -23,6 +23,8 @@ private String empName;
 
 	@Column
 	private int deptNo;
+	
+	Employee() { }
 
 	public Employee(int empId, String empName, String jotTitle, double salary, int deptNo) {
 		super();
